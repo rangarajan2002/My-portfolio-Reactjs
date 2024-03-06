@@ -1,0 +1,97 @@
+#Exp
+{
+  margin-top: 9rem;
+  height: 100vh;
+}
+
+.experience-page {
+  padding: 20px;
+  background-color: black; /* Setting background color to black */
+}
+.experience-page h2
+{
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  margin: 10px;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-container {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  perspective: 1000px;
+  position: relative;
+  margin: 10px;
+  background: linear-gradient(135deg, #2980b9, #6dd5fa); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Box shadow effect */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for transform and box shadow */
+}
+
+
+.skill-container:hover {
+  transform: translateY(-50px); /* Move the container up on hover */
+  box-shadow: 0 20px 20px rgba(154, 3, 255, 0.949); /* Increase box shadow on hover */
+}
+
+.skill-container .front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-container .front {
+  background-color: transparent; /* Transparent background */
+  color: white; /* Text color */
+  font-size: 24px; /* Font size */
+  text-align: center;
+}
+
+
+
+.Exp-title {
+  font-size: 40px; /* Adjust font size as needed */
+  color: #ffffff; /* Adjust text color as needed */
+  text-align: center;
+  text-decoration: underline; /* Add underline */
+  text-decoration-color: #ff039a; /* Adjust underline color */
+  text-decoration-skip-ink: none; /* Ensure no gaps between text and underline */
+  text-underline-offset: 1rem;
+
+}
+
+
+.skill-container {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  perspective: 1000px;
+  position: relative;
+  margin: 10px;
+  background: linear-gradient(155deg, #0aabe6, #bbbac0); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Box shadow effect */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for transform and box shadow */
+  font-weight: bold;
+}
+
+
+#Exp {
+  opacity: 0; /* Initial opacity */
+  transform: translateX(-100px); /* Initial position */
+  transition: opacity 1s ease-in, transform 1s linear; /* Transition */
+}
+
+#Exp.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

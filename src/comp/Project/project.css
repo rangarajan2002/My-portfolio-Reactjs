@@ -1,0 +1,79 @@
+.project-page {
+    padding: 20px;
+    height: 80vh;
+  }
+  
+  .Proj-title {
+    font-size: 40px; /* Adjust font size as needed */
+    color: #ffffff; /* Adjust text color as needed */
+    text-align: center;
+    text-decoration: underline; /* Add underline */
+    text-decoration-color: #ff039a; /* Adjust underline color */
+    text-decoration-skip-ink: none; /* Ensure no gaps between text and underline */
+    text-underline-offset: 1rem
+  }
+  
+  .project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-top: 5rem;
+    color: white;
+  }
+  
+  .project-item {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  
+  .project-image {
+    width: 100%; /* Set width to 100% to ensure it fills the container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    margin-top: 20px;
+  }
+  
+  .project-title {
+    margin-top: 10px;
+  }
+  
+  .github-button {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #088ae0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for background-color and box-shadow properties */
+  }
+  
+  .github-button:hover {
+    background-color: #0dd3ed;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.921); /* Add black shadow to button when hovered */
+  }
+  
+  .project-item {
+    transition: transform 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-20px);
+  }
+  
+  #project {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  #project.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }

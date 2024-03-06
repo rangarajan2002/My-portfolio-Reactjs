@@ -1,0 +1,107 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+  }
+  
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(255, 254, 254) 0.1rem solid;
+    border-color: rgb(255, 255, 255);
+    background: (250, 250, 250);
+    margin: 3rem auto;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+  .link-icon {
+    height: 2.5rem;
+  }
+
+  .Contact-title
+  {
+    font-size: 40px; /* Adjust font size as needed */
+    color: #ffffff; /* Adjust text color as needed */
+    text-align: center;
+    text-decoration: underline; /* Add underline */
+    text-decoration-color: #ff039a; /* Adjust underline color */
+    text-decoration-skip-ink: none; /* Ensure no gaps between text and underline */
+    text-underline-offset: 1rem
+  }
+
+
+  .mailname {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+  }
+  
+  .linkname
+  {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+  }
+  
+
+  .mailname{
+    color: rgb(255, 255, 255);
+
+  }
+  
+  .mailname:hover {
+    color: rgb(0, 238, 255);
+  }
+
+  .linkname{
+    color: rgb(255, 255, 255);
+  }
+  
+  .linkname:hover {
+    color: rgb(0, 238, 255);
+    
+  }
+
+  .phone-no{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  .phone-no:hover {
+    color: rgb(0, 238, 255);
+    cursor: pointer;
+  }
+
+
+/* Slide-in animation */
+#contact.slide-in {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#contact.slide-in.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
